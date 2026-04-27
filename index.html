@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Hospital Patient Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+h1{
+text-align:center;
+letter-spacing:1px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="form-box">
+
+<h1 style= "color: #fae3b6;">Hospital Patient Registration</h1>
+
+<form id="regForm" onsubmit="return validateForm()">
+
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your full name">
+
+<label>Email ID</label>
+<input type="email" id="email" placeholder="Enter your email">
+
+<label>Phone Number</label>
+<input type="tel" id="phone" placeholder="Enter your phone number">
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Gender</label>
+
+<div class="gender">
+
+<label><input type="radio" name="gender" id="male" value="Male"> Male</label>
+<label><input type="radio" name="gender" id="female" value="Female"> Female</label>
+<label><input type="radio" name="gender" id="other" value="Other"> Other</label>
+
+</div>
+
+<label>Blood Type</label>
+
+<select id="bloodType">
+<option value="">Select Blood Type</option>
+<option value="O+">O+</option>
+<option value="O-">O-</option>
+<option value="A+">A+</option>
+<option value="A-">A-</option>
+<option value="B+">B+</option>
+<option value="B-">B-</option>
+<option value="AB+">AB+</option>
+<option value="AB-">AB-</option>
+</select>
+
+<label>Medical Conditions (if any)</label>
+
+<select id="medicalCondition">
+<option value="">Select or Leave Blank</option>
+<option value="Diabetes">Diabetes</option>
+<option value="Hypertension">Hypertension</option>
+<option value="Asthma">Asthma</option>
+<option value="Heart Disease">Heart Disease</option>
+<option value="Thyroid">Thyroid</option>
+<option value="Other">Other</option>
+</select>
+
+<label>Insurance Provider</label>
+<input type="text" id="insurance" placeholder="Enter insurance provider (if any)">
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
